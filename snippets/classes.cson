@@ -1,0 +1,40 @@
+".source.java":
+	"class":
+		prefix: "class"
+		body: """
+			${1:public} class ${2:ClassName} {
+				${0}
+			}$0
+		"""
+
+  "public class constructor":
+		prefix: "constructorPublic"
+		body: """
+			${1:public} ${2:ClassName} (${3:Parameters}) {
+				${4}
+			}$5
+		"""
+
+  "private class constructor":
+		prefix: "constructorPrivate"
+		body: """
+			${1:private} ${2:ClassName} (${3:Parameters}) {
+				${4}
+			}$5
+		"""
+
+  "public method":
+		prefix: "methodPublic"
+		body: """
+			${1:public} ${2:ReturnType} ${3:MethodName}(${4:Parameters}) {
+				${5}
+			}$6
+		"""
+
+	"private method":
+		prefix: "methodPrivate"
+		body: """
+			${1:private} ${2:ReturnType} ${3:MethodName}(${4:Parameters}) {
+				${5}
+			}$6
+		"""

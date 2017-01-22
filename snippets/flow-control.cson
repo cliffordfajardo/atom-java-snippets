@@ -1,0 +1,91 @@
+".source.java":
+
+  "if statement":
+		prefix: "if"
+		body: """
+			if(${1:condition}) {
+				${2}
+			}$3
+		"""
+
+  "else statement":
+		prefix: "el"
+		body: """
+			else {
+				${1}
+			}$2
+		"""
+
+  "if/else statement":
+		prefix: "ife"
+		body: """
+			if(${1:condition}) {
+				${2}
+			} else {
+				${3}
+			}$4
+		"""
+
+	"else/if statement":
+		prefix: "eif"
+		body: """
+			else if (${1:condition}) {
+				${2}
+			}${3}
+		"""
+
+	"for loop":
+		prefix: "for"
+		body: """
+      for (Integer ${1:i} = 0; ${1:i} < ${2:iterable}${3:.length}; ${1:i}++) {
+        ${4}
+      }${5}
+		"""
+
+	"iterator based for each loop":
+		prefix: "fel"
+		body: """
+			for(${1:object_type} ${2:var_name}: ${3:collection_name}) {
+				${2:var_name}
+			}$0
+		"""
+
+	"while loop":
+		prefix: "while"
+		body: """
+			while (${1:condition}) {
+				${2}
+			}$3
+		"""
+
+	"try/catch":
+		prefix: "tc"
+		body: """
+			try {
+				${1}
+			} catch(Exception ${2:exp_name}) {
+				${3}
+			}$4
+		"""
+
+	"try/finally":
+		prefix: "tf"
+		body: """
+			try {
+				${1}
+			} catch(Exception ${2:exp_name}) {
+				${3}
+			}$4
+		"""
+
+	"try/catch/finally":
+		prefix: "tcf"
+		body: """
+			try {
+				${1}
+			} catch(Exception ${2:exp_name}) {
+				${3:System.debug(e.getMessage());}
+			} finally {
+        ${4}
+      }${5}
+		"""

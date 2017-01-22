@@ -1,0 +1,35 @@
+{
+  "name": "java-snippets",
+  "version": "0.0.0",
+  "description": "A collection of Java commands for optimizing modern Java development productivity.",
+  "private": true,
+  "repository": "https://github.com/cliffordfajardo/java-snippets",
+  "bugs": {
+    "url": "https://github.com/cliffordfajardo/java-snippets/issues"
+  },
+  "author":{
+    "name": "Clifford Fajardo",
+    "email": "cliffordfajardo@gmail.com",
+    "url": "twitter.com/cliffordfajard0"
+  },
+  "keywords": [
+    "code snippets",
+    "java",
+    "java productivity",
+    "java shortcuts",
+    "java snippets",
+    "java workflow",
+    "productivity",
+    "snippets",
+    "zen coding"
+  ],
+  "contributors": [
+
+  ],
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

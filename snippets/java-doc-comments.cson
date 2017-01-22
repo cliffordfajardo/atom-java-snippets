@@ -1,0 +1,22 @@
+# Generated with Atomizr – https://atom.io/packages/atomizr
+".source.java":
+
+	"method comment":
+		prefix: "commentModule"
+		body: """
+			/**
+			 * @description your_method_description
+			 * @param param_name your_param_description
+			 * @return return_type your_return_description
+			 **/$1
+		"""
+
+	"module comment":
+		prefix: "commentModule"
+		body: """
+      /**
+      * The ____ program implements/is used for.....
+      *
+      * @author
+      */
+		"""
