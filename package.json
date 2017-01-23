@@ -1,11 +1,11 @@
 {
-  "name": "java-snippets",
+  "name": "atom-java-snippets",
   "version": "0.0.0",
   "description": "A collection of Java commands for optimizing modern Java development productivity.",
   "private": true,
-  "repository": "https://github.com/cliffordfajardo/java-snippets",
+  "repository": "https://github.com/cliffordfajardo/atom-java-snippets",
   "bugs": {
-    "url": "https://github.com/cliffordfajardo/java-snippets/issues"
+    "url": "https://github.com/cliffordfajardo/atom-java-snippets/issues"
   },
   "author":{
     "name": "Clifford Fajardo",
