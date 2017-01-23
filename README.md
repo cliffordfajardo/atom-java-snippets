@@ -149,6 +149,22 @@ try {
 
 ### Class Related Snippets
 
+##### `class` class and constructor
+```java
+${1:public} class ${2:ClassName} {
+  ${0}
+}$0
+```
+
+##### `classAndConstructor⇥` class and constructor
+```java
+${1:public_or_private} class ${2:ClassName} {
+  ${3:public_or_private} ${2:ClassName} (${4:Parameters}) {
+    ${5}
+  }
+}
+```
+
 ##### `constructorPublic⇥` public class constructor
 
 ```java
@@ -181,6 +197,14 @@ ${1:private} ${2:ClassName} (${3:Parameters}) {
 }$5
 ```
 
+##### `methodStatic⇥` static method
+
+```java
+${1:public_or_private} static ${2:ClassName} (${3:Parameters}) {
+  ${4}
+}$5
+```
+
 
 
 
@@ -192,7 +216,7 @@ ${1:private} ${2:ClassName} (${3:Parameters}) {
 
 ### Java Doc Comments Snippets
 
-##### `commentMethod` java doc method comment
+##### `commentMethod⇥` java doc method comment
 
 ```java
 /**
@@ -202,7 +226,7 @@ ${1:private} ${2:ClassName} (${3:Parameters}) {
  **/$1
 ```
 
-##### `commentModule` java doc module comment
+##### `commentModule⇥` java doc module comment
 
 ```java
 /**
