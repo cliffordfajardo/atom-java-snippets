@@ -2,7 +2,7 @@
 
 > A collection of Java commands for optimizing modern Java development productivity.
 
-![](https://raw.githubusercontent.com/cliffordfajardo/atomjava-snippets/master/atom-java-snippets-demo.gif)
+![](https://raw.githubusercontent.com/cliffordfajardo/atom-java-snippets/master/atom-java-snippets-demo.gif)
 ![The MIT License](https://img.shields.io/npm/l/express.svg)
 
 
