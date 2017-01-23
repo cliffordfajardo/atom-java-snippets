@@ -2,7 +2,7 @@
 ".source.java":
 
 	"method comment":
-		prefix: "commentModule"
+		prefix: "commentMethod"
 		body: """
 			/**
 			 * @description your_method_description
