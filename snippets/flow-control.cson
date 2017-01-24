@@ -29,12 +29,12 @@
 
   "try/catch":
     "prefix": "trycatch"
-    "body": "try {\n\t${1}\n} catch(Exception ${2:exp_name}) {\n\t${3}\n}$4"
+    "body": "try {\n\t${1}\n} catch(Exception ${2:exception_name}) {\n\t${2:exception_name}\n}$3"
 
   "try/finally":
     "prefix": "tryfinally"
-    "body": "try {\n\t${1}\n} finally {\n\t${3}\n}$4"
+    "body": "try {\n\t${1}\n} finally {\n\t${2}\n}$3"
 
   "try/catch/finally":
     "prefix": "trycatchfinally"
-    "body": "try {\n\t${1}\n} catch(Exception ${2:exp_name}) {\n\t${3}\n} finally {\n\t${4}\n}$5"
+    "body": "try {\n\t${1}\n} catch(Exception ${2:exception_name}) {\n\t${2:exception_name}\n} finally {\n\t${3}\n}$4"

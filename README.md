@@ -3,7 +3,11 @@
 > A collection of Java commands for optimizing modern Java development productivity.
 
 ![](https://raw.githubusercontent.com/cliffordfajardo/atom-java-snippets/master/atom-java-snippets-demo.gif)
+
 ![The MIT License](https://img.shields.io/npm/l/express.svg)
+[![apm](https://img.shields.io/apm/v/atom-java-snippets.svg?style=flat-square)](https://atom.io/packages/atom-java-snippets)
+[![apm](https://img.shields.io/apm/dm/atom-java-snippets.svg?style=flat-square)](https://atom.io/packages/atom-java-snippets)
+
 
 
 
@@ -65,14 +69,14 @@ if(${1:condition}) {
 }$3
 ```
 
-##### `el⇥` else statement
+##### `else⇥` else statement
 ```java
 else {
   ${1}
 }$2
 ```
 
-##### `ife⇥` else statement
+##### `ifelse⇥` if else statement
 ```java
 if(${1:condition}) {
   ${2}
@@ -81,7 +85,7 @@ if(${1:condition}) {
 }$4
 ```
 
-##### `eif⇥` else if statement
+##### `elseif⇥` else if statement
 ```java
 else if (${1:condition}) {
   ${2}
@@ -95,7 +99,7 @@ for (Integer ${1:i} = 0; ${1:i} < ${2:iterable}${3:.length}; ${1:i}++) {
 }${5}
 ```
 
-##### `fel⇥` iterator based for each loop
+##### `fore⇥` iterator based for each loop
 ```java
 for(${1:object_type} ${2:var_name}: ${3:collection_name}) {
   ${4:var_name}
@@ -109,33 +113,33 @@ while (${1:condition}) {
 }$3
 ```
 
-##### `tc⇥` try/catch
+##### `trycatch⇥` try/catch
 ```java
 try {
   ${1}
-} catch(Exception ${2:exp_name}) {
-  ${3}
-}$4
+} catch(Exception ${2:exception_name}) {
+  ${2:exception_name}
+}$3
 ```
 
-##### `tf⇥` try/finally
+##### `tryfinally⇥` try/finally
 ```java
 try {
   ${1}
-} catch(Exception ${2:exp_name}) {
-  ${3}
-}$4
-```
-
-##### `tcf⇥` try/catch/finally
-```java
-try {
-  ${1}
-} catch(Exception ${2:exp_name}) {
-  ${3:System.debug(e.getMessage());}
 } finally {
-  ${4}
-}${5}
+  ${2}
+}$3
+```
+
+##### `trycatchfinally⇥` try/catch/finally
+```java
+try {
+  ${1}
+} catch(Exception ${2:exception_name}) {
+  ${2:exception_name}
+} finally {
+  ${3}
+}${4}
 ```
 
 
@@ -328,4 +332,4 @@ return -1;
 
 
 ### Credits
-- [Idleberg](https://atom.io/users/idleberg/) for his [Atomizer](https://atom.io/packages/atomizr) package that helped me convert Sublime snippets into Atom's format.
+- [Idleberg](https://atom.io/users/cliffordfajardo/) for his [Atomizer](https://atom.io/packages/atomizr) package that helped me convert Sublime snippets into Atom's format.
