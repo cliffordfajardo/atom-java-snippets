@@ -1,6 +1,6 @@
 {
   "name": "atom-java-snippets",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "A collection of Java commands for optimizing modern Java development productivity.",
   "private": true,
   "repository": "https://github.com/cliffordfajardo/atom-java-snippets",
