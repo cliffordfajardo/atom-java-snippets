@@ -1,59 +1,28 @@
 ".source.java":
-
   "class":
-    prefix: "class"
-		body: """
-			${1:public} class ${2:ClassName} {
-				${3}
-			}$4
-		"""
+    "prefix": "class"
+    "body": "${1:pub_or_priv} class ${2:ClassName} {\n\t${3}\n}$4"
 
   "class and constructor":
-    prefix: "classAndConstructor"
-		body: """
-			${1:public_or_private} class ${2:ClassName} {
-  	${3:public_or_private} ${2:ClassName} (${4:Parameters}) {
-  	  ${5}
-  	}
-			}
-		"""
+    "prefix": "classAndConstructor"
+    "body": "${1:public_or_private} class ${2:ClassName} {\n\t${3:public_or_private} ${2:ClassName} (${4:Parameters}) {\n\t\t${5}\n\t}\n}${6}"
 
   "public class constructor":
-    prefix: "constructorPublic"
-		body: """
-			${1:public} ${2:ClassName} (${3:Parameters}) {
-				${4}
-			}$5
-		"""
+    "prefix": "constructorPublic"
+    "body": "${1:public} ${2:ClassName} (${3:Parameters}) {\n\t${4}\n}${5}"
 
   "private class constructor":
-    prefix: "constructorPrivate"
-		body: """
-			${1:private} ${2:ClassName} (${3:Parameters}) {
-				${4}
-			}$5
-		"""
+    "prefix": "constructorPrivate"
+    "body": "${1:private} ${2:ClassName} (${3:Parameters}) {\n\t${4}\n}${5}"
 
   "public method":
-    prefix: "methodPublic"
-		body: """
-			${1:public} ${2:ReturnType} ${3:MethodName}(${4:Parameters}) {
-				${5}
-			}$6
-		"""
+    "prefix": "methodPublic"
+    "body": "${1:public} ${2:ReturnType} ${3:MethodName}(${4:Parameters}) {\n\t${5}\n}$6"
 
   "private method":
-    prefix: "methodPrivate"
-		body: """
-			${1:private} ${2:ReturnType} ${3:MethodName}(${4:Parameters}) {
-				${5}
-			}$6
-		"""
+    "prefix": "methodPrivate"
+    "body": "${1:private} ${2:ReturnType} ${3:MethodName}(${4:Parameters}) {\n\t${5}\n}$6"
 
   "static method":
-    prefix: "methodStatic"
-		body: """
-			${1:public_or_private} static ${2:ReturnType} ${3:MethodName}(${4:Parameters}) {
-				${5}
-			}$6
-		"""
+    "prefix": "methodStatic"
+    "body": "${1:pub_or_priv} static ${2:ReturnType} ${3:MethodName}(${4:Parameters}) {\n\t${5}\n}$6"
